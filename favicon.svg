@@ -1,23 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 400 400" role="img" aria-label="Símbolo InovaGeoPav"><clipPath id="top-fav"><rect x="0" y="0" width="400" height="200"></rect></clipPath>
-<path d="M200.00 36.00 L214.15 36.61 L224.06 9.51 L250.66 14.80 L249.45 43.63 L262.76 48.48 L275.60 54.46 L295.13 33.22 L317.68 48.29 L305.53 74.46 L315.97 84.03 L325.54 94.47 L351.71 82.32 L366.78 104.87 L345.54 124.40 L351.52 137.24 L356.37 150.55 L385.20 149.34 L390.49 175.94 L363.39 185.85 L364.00 200.00 L363.39 214.15 L390.49 224.06 L385.20 250.66 L356.37 249.45 L351.52 262.76 L345.54 275.60 L366.78 295.13 L351.71 317.68 L325.54 305.53 L315.97 315.97 L305.53 325.54 L317.68 351.71 L295.13 366.78 L275.60 345.54 L262.76 351.52 L249.45 356.37 L250.66 385.20 L224.06 390.49 L214.15 363.39 L200.00 364.00 L185.85 363.39 L175.94 390.49 L149.34 385.20 L150.55 356.37 L137.24 351.52 L124.40 345.54 L104.87 366.78 L82.32 351.71 L94.47 325.54 L84.03 315.97 L74.46 305.53 L48.29 317.68 L33.22 295.13 L54.46 275.60 L48.48 262.76 L43.63 249.45 L14.80 250.66 L9.51 224.06 L36.61 214.15 L36.00 200.00 L36.61 185.85 L9.51 175.94 L14.80 149.34 L43.63 150.55 L48.48 137.24 L54.46 124.40 L33.22 104.87 L48.29 82.32 L74.46 94.47 L84.03 84.03 L94.47 74.46 L82.32 48.29 L104.87 33.22 L124.40 54.46 L137.24 48.48 L150.55 43.63 L149.34 14.80 L175.94 9.51 L185.85 36.61 Z" fill="#F28C1B" clip-path="url(#top-fav)"></path>
-<circle cx="200" cy="200" r="140" fill="#FFFFFF"></circle>
-<clipPath id="bot-fav"><path d="M8 200 A192 192 0 0 0 392 200 Z"></path></clipPath>
-<g clip-path="url(#bot-fav)">
-<rect x="0" y="200" width="400" height="45" fill="#2B2B2B"></rect>
-<rect x="0" y="244" width="400" height="41" fill="#5E3B22"></rect>
-<rect x="0" y="284" width="400" height="41" fill="#8A5530"></rect>
-<rect x="0" y="324" width="400" height="71" fill="#C69C72"></rect>
-<rect x="0" y="242" width="400" height="4" fill="#FFFFFF"></rect>
-<rect x="0" y="282" width="400" height="4" fill="#FFFFFF"></rect>
-<rect x="0" y="322" width="400" height="4" fill="#FFFFFF"></rect>
-<line x1="22" y1="222" x2="378" y2="222" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="22 16"></line>
-</g>
-<line x1="200" y1="200" x2="116" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
-<line x1="200" y1="200" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
-<line x1="200" y1="200" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
-<line x1="116" y1="148" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
-<line x1="200" y1="92" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
-<circle cx="116.00" cy="148.00" r="17" fill="#F28C1B" stroke="#FFFFFF" stroke-width="6"></circle>
-<circle cx="200.00" cy="92.00" r="17" fill="#F28C1B" stroke="#FFFFFF" stroke-width="6"></circle>
-<circle cx="284.00" cy="148.00" r="17" fill="#F28C1B" stroke="#FFFFFF" stroke-width="6"></circle>
-<circle cx="200.00" cy="200.00" r="15" fill="#F28C1B" stroke="#FFFFFF" stroke-width="6"></circle></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 400 400" role="img" aria-label="Símbolo InovaGeoPav"><path d="M200 18 L330 78 L330 150 L200 212 L70 150 L70 78 Z" fill="#3A3A3A"></path>
+<path d="M70 166 L200.0 228 L330 166 L330 210 L200.0 272 L70 210 Z" fill="#9A6A43"></path>
+<path d="M70 226 L200.0 288 L330 226 L330 270 L200.0 332 L70 270 Z" fill="#D2AA80"></path>
+<path d="M108 286 L200.0 330 L292 286 L292 312 L200.0 356 L108 312 Z" fill="#F28C1B"></path>
+<polyline points="118,120 200,150 282,112" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"></polyline>
+<circle cx="118" cy="120" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="200" cy="150" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="282" cy="112" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle></svg>

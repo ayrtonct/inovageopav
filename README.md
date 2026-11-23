@@ -4,7 +4,9 @@ Página estática do grupo de pesquisa InovaGeoPav (Uema), com acesso ao Thermoa
 É o destino do QR Code e da tag NFC da folha A4.
 
 - `index.html`: a página inteira (HTML + CSS, sem build)
-- `favicon.svg`: símbolo do grupo (conceito D, provisório até a escolha da logo)
+- `favicon.svg`, `apple-touch-icon.png`: símbolo do grupo
+- `logo/`: arquivos oficiais da logo (SVG com texto em curvas e PNG) e a página de download em `/logo/`
+- `img/`: logos do LSP e do LAPS
 
 Os trechos entre colchetes com fundo amarelo (`[...]`) são campos a preencher.
 

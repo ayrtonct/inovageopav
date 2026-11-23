@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Símbolo InovaGeoPav"><path d="M200 18 L330 78 L330 150 L200 212 L70 150 L70 78 Z" fill="#3A3A3A"></path>
+<path d="M70 166 L200.0 228 L330 166 L330 210 L200.0 272 L70 210 Z" fill="#3A3A3A"></path>
+<path d="M70 226 L200.0 288 L330 226 L330 270 L200.0 332 L70 270 Z" fill="#3A3A3A"></path>
+<path d="M108 286 L200.0 330 L292 286 L292 312 L200.0 356 L108 312 Z" fill="#3A3A3A"></path>
+<polyline points="118,120 200,150 282,112" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"></polyline>
+<circle cx="118" cy="120" r="20" fill="#3A3A3A" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="200" cy="150" r="20" fill="#3A3A3A" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="282" cy="112" r="20" fill="#3A3A3A" stroke="#FFFFFF" stroke-width="8"></circle></svg>
