@@ -115,6 +115,15 @@ figcaption{margin-top:.5rem;font-size:.95rem;color:var(--suave)}
 .laps-projetos li{padding:.3rem 0}
 .laps-projetos li::marker{color:var(--laps-claro)}
 .laps a:not(.laps-botao){text-decoration-color:var(--laps-claro)}
+
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-tap-highlight-color:rgba(242,140,27,.18)}
+[id]{scroll-margin-top:1rem}
+.corte-mob{display:none}
+.nav-curto{display:none}
+.corte .m-lbl{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:17px}
+.corte .m-dim{font-family:Barlow,sans-serif;font-weight:600;font-size:15px}
+.voltar{display:inline-flex;align-items:center;min-height:44px}
 @media (max-width:900px){
 .laps-grade{grid-template-columns:1fr;gap:2.5rem}
 .abertura{grid-template-columns:1fr;padding-top:2.5rem;gap:2rem}
@@ -123,6 +132,52 @@ figcaption{margin-top:.5rem;font-size:.95rem;color:var(--suave)}
 .equipe{grid-template-columns:1fr;gap:0}
 }
 @media (max-width:600px){
+
+body{font-size:1.0625rem;line-height:1.55}
+.faixa{padding:0 1.25rem}
+.topo .faixa{gap:.5rem;padding-top:.75rem;padding-bottom:.25rem}
+.marca img{height:50px}
+.topo nav{width:100%;flex-wrap:nowrap;overflow-x:auto;gap:0 1.1rem;font-size:1rem;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.topo nav::-webkit-scrollbar{display:none}
+.topo nav a{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0}
+.nav-longo{display:none}.nav-curto{display:inline}
+.abertura{padding-top:1.75rem;padding-bottom:2.5rem;gap:1.75rem}
+h1{font-size:2.35rem;line-height:1}
+.lead{font-size:1.08rem;margin-top:1rem}
+.acessos{margin-top:1.5rem}
+.acesso{padding:.9rem .25rem;min-height:64px}
+.acesso.principal{padding-left:.9rem}
+.acesso strong{font-size:1.45rem}
+.acesso small{font-size:.98rem;line-height:1.35}
+.corte-desk{display:none}
+.corte-mob{display:block}
+.abertura-figura{margin:0 -1.25rem}
+figcaption{padding:0 1.25rem}
+.bloco{padding:3rem 0}
+.cabeca{margin-bottom:1.5rem}
+.cabeca h2,.equipe h2,.contato h2{font-size:1.85rem}
+.cadeia li,.cadeia li+li{display:grid;grid-template-columns:2rem 1fr;column-gap:.85rem;align-items:center;padding:1rem 0}
+.cadeia h4{margin:0;font-size:1.2rem}
+.cadeia p{grid-column:2;margin-top:.15rem}
+.etapas{margin-top:2rem;gap:1.5rem}
+.etapas h3{font-size:1.25rem}
+.linha{gap:.35rem;padding:1.25rem 0}
+.linha .meta{font-size:.95rem}
+.linha h3{font-size:1.22rem}
+.equipe h3{margin-top:1.5rem}
+.cartao{padding:1.4rem}
+.cartao-titulo{font-size:1.6rem}
+.cartao img,.cartao-simbolo{height:60px}
+.cartao-acao{display:inline-flex;align-items:center;min-height:44px;padding-top:.5rem}
+.logos{gap:2rem 2.5rem}
+.logos img{max-height:64px}
+.pagina-cabeca{padding:1rem 0 .5rem}
+.pagina-cabeca h1{margin-top:.5rem;font-size:2.2rem}
+.laps-logo img{height:84px}
+.laps-intro h2{font-size:1.75rem;margin-top:1rem}
+.laps-botao{width:100%;justify-content:center}
+.rodape{padding:2rem 0}
+.rodape img{height:48px}
 .laps-linhas{grid-template-columns:1fr}
 .laps-fatos{grid-template-columns:1fr;gap:.1rem}
 .laps-fatos dd{margin-bottom:.6rem}
@@ -166,7 +221,7 @@ body{font-size:1.0625rem}
 <header class="topo">
 <div class="faixa">
 <a class="marca" href="/"><img src="/logo/inovageopav-horizontal.svg" alt="InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos, Uema" width="226" height="64"></a>
-<nav aria-label="Principal"><a href="/#rede">Rede de sensores</a><a href="/pesquisas/">Pesquisas</a><a href="/laps/">LAPS</a><a href="/#equipe">Equipe</a></nav>
+<nav aria-label="Principal"><a href="/#rede"><span class="nav-longo">Rede de sensores</span><span class="nav-curto">Sensores</span></a><a href="/pesquisas/">Pesquisas</a><a href="/laps/">LAPS</a><a href="/#equipe">Equipe</a></nav>
 </div>
 </header>
 <main id="conteudo">
