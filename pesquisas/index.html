@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesquisas do InovaGeoPav</title>
+<meta name="description" content="Projetos em andamento e trabalhos concluídos do grupo de pesquisa InovaGeoPav (Uema).">
+<meta property="og:title" content="Pesquisas do InovaGeoPav">
+<meta property="og:image" content="/logo/inovageopav-horizontal.png">
+<meta name="theme-color" content="#3A3A3A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;1,400&amp;family=Barlow+Semi+Condensed:wght@700;800&amp;display=swap">
+<style>
+:root{--asfalto:#3A3A3A;--texto:#2F2F2F;--suave:#5C5852;--fio:#DAD4CC;--argila:#9A6A43;--areia:#D2AA80;--base:#F2F1EE;--laranja:#F28C1B;--laranja-t:#A65300}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;color:var(--texto);font-family:Barlow,system-ui,sans-serif;font-size:1.125rem;line-height:1.6}
+a{color:var(--texto);text-decoration-color:var(--laranja);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--laranja-t)}
+a:focus-visible{outline:3px solid var(--laranja);outline-offset:3px;border-radius:2px}
+h1,h2,h3,h4{font-family:"Barlow Semi Condensed",Barlow,sans-serif;color:var(--asfalto);margin:0;text-wrap:balance}
+p{margin:0}
+.faixa{width:100%;max-width:74rem;margin:0 auto;padding:0 1.5rem}
+.pular{position:absolute;left:-999px}.pular:focus{left:1rem;top:1rem;background:#fff;padding:.5rem 1rem;z-index:10}
+.topo{border-bottom:1px solid var(--fio)}
+.topo .faixa{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 2rem;padding-top:1rem;padding-bottom:1rem}
+.marca img{display:block;height:64px;width:auto}
+.topo nav{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;font-weight:500}
+.topo nav a{text-decoration:none;padding:.6rem 0;border-bottom:2px solid transparent}
+.topo nav a:hover{border-bottom-color:var(--laranja);color:var(--texto)}
+.abertura{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:3rem;align-items:center;padding-top:4rem;padding-bottom:4rem}
+h1{font-weight:800;font-size:clamp(2.6rem,6vw,4.4rem);line-height:.98;letter-spacing:-.015em}
+.lead{margin-top:1.25rem;font-size:1.2rem;color:var(--suave);max-width:34rem}
+.acessos{list-style:none;margin:2rem 0 0;padding:0;border-top:1px solid var(--fio)}
+.acessos li{border-bottom:1px solid var(--fio)}
+.acesso{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem .25rem;text-decoration:none}
+.acesso span{display:flex;flex-direction:column}
+.acesso strong{font-family:"Barlow Semi Condensed",sans-serif;font-size:1.6rem;line-height:1.1;font-weight:700;color:var(--asfalto)}
+.acesso small{font-size:1rem;color:var(--suave)}
+.acesso .ext{flex:none;width:22px;height:22px;color:var(--asfalto)}
+.acesso.principal strong{color:var(--asfalto)}
+.acesso.principal{box-shadow:inset 4px 0 0 var(--laranja);padding-left:1rem}
+.acesso:hover strong{color:var(--laranja-t)}
+.abertura-figura{margin:0}
+.corte{display:block;width:100%;height:auto}
+.corte .lbl{font-family:"Barlow Semi Condensed",sans-serif;font-weight:700;font-size:22px}
+.corte .dim{font-family:Barlow,sans-serif;font-weight:600;font-size:17px}
+figcaption{margin-top:.5rem;font-size:.95rem;color:var(--suave)}
+.bloco{padding:4.5rem 0;border-top:1px solid var(--fio)}
+.bloco.claro{background:var(--base);border-top:0}
+.cabeca{max-width:46rem;margin-bottom:2rem}
+.cabeca h2,.equipe h2,.contato h2{font-weight:800;font-size:clamp(2rem,4vw,2.75rem);line-height:1.05}
+.cabeca p{margin-top:1rem;color:var(--suave)}
+.cadeia{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:3px solid var(--asfalto)}
+.cadeia li{padding:1.25rem 1.25rem 1.5rem 0;position:relative}
+.cadeia li+li{padding-left:1.25rem;border-left:1px solid var(--fio)}
+.cadeia .n{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--laranja);color:var(--asfalto);font-family:"Barlow Semi Condensed",sans-serif;font-weight:800}
+.cadeia h4{margin-top:.75rem;font-size:1.3rem;font-weight:700}
+.cadeia p{margin-top:.25rem;font-size:1rem;color:var(--suave)}
+.etapas{margin-top:3rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+.etapas>div{border-left:3px solid var(--argila);padding-left:1.25rem}
+.etapas .quando{font-weight:600;color:var(--laranja-t)}
+.etapas h3{font-size:1.4rem;font-weight:700;margin:.2rem 0 .4rem}
+.etapas p{color:var(--suave)}
+.etapas .quando{color:var(--laranja-t)}
+.lista{list-style:none;margin:0 0 4rem;padding:0;border-top:1px solid var(--fio)}
+.lista:last-child{margin-bottom:0}
+.linha{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:.5rem 2rem;padding:1.5rem 0;border-bottom:1px solid var(--fio)}
+.linha .meta{font-weight:600;color:var(--argila);line-height:1.45}
+.linha h3{font-size:1.4rem;font-weight:700;line-height:1.2;max-width:44rem}
+.linha p{margin-top:.4rem;color:var(--suave);max-width:46rem}
+.linha .pessoas{color:var(--texto);font-weight:500}
+.equipe{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem}
+.equipe h3{font-size:1.35rem;font-weight:700;margin:2rem 0 .5rem}
+.equipe p{color:var(--suave)}
+.equipe p strong{color:var(--texto)}
+.estudantes{list-style:none;margin:0;padding:0;border-top:1px solid var(--fio)}
+.estudantes li{display:flex;flex-direction:column;padding:.75rem 0;border-bottom:1px solid var(--fio)}
+.estudantes span{font-size:1rem;color:var(--suave)}
+.logos{display:flex;flex-wrap:wrap;align-items:center;gap:2.5rem 4rem}
+.logos img{display:block;width:auto}
+.contato dl{display:grid;grid-template-columns:8rem minmax(0,1fr);gap:.75rem 2rem;margin:2rem 0 0;max-width:52rem}
+.contato dt{font-weight:600}
+.contato dd{margin:0;color:var(--suave)}
+.ph{background:#FFF1CC;color:#5C4300;padding:0 .3em;border-radius:3px}
+.rodape{background:var(--asfalto);color:#E6E1DA;padding:2.5rem 0}
+.rodape .faixa{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.5rem}
+.rodape img{display:block;height:56px;width:auto}
+.rodape p{max-width:34rem;font-size:1rem}
+.rodape a{color:#FFFFFF}
+
+.laps{background:#EDF3F9;border-top:0;--laps-azul:#24405E;--laps-claro:#7FB3E0}
+.laps h2,.laps h3{color:var(--laps-azul)}
+.laps-grade{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:3.5rem}
+.laps-logo img{display:block;height:110px;width:auto}
+.laps-intro h2{margin-top:1.5rem;font-weight:800;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.05}
+.laps-intro>p{margin-top:1rem;color:#3E4A57}
+.laps-fatos{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:.5rem 1.25rem;margin:1.75rem 0 2rem;padding-top:1.25rem;border-top:1px solid #C9D8E8}
+.laps-fatos dt{font-weight:600;color:var(--laps-azul)}
+.laps-fatos dd{margin:0;color:#3E4A57}
+.laps-botao{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:0 1.4rem;border-radius:999px;background:var(--laps-azul);color:#FFFFFF;font-weight:600;text-decoration:none}
+.laps-botao:hover{background:#1A3049;color:#FFFFFF}
+.laps-botao .ext{width:16px;height:16px}
+.laps-conteudo h3{font-size:1.4rem;font-weight:700;margin:0 0 .75rem}
+.laps-conteudo h3+p,.laps-conteudo ul{margin-bottom:2.25rem}
+.laps-conteudo p{color:#3E4A57}
+.laps-linhas{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.laps-linhas li{display:flex;flex-direction:column;gap:.3rem;padding:1rem 1.1rem;border-top:3px solid var(--laps-claro);background:#FFFFFF}
+.laps-linhas strong{color:var(--laps-azul)}
+.laps-linhas span{font-size:1rem;color:#3E4A57}
+.laps-projetos{padding:0 0 0 1.2rem;margin:0;color:#3E4A57}
+.laps-projetos li{padding:.3rem 0}
+.laps-projetos li::marker{color:var(--laps-claro)}
+.laps a:not(.laps-botao){text-decoration-color:var(--laps-claro)}
+@media (max-width:900px){
+.laps-grade{grid-template-columns:1fr;gap:2.5rem}
+.abertura{grid-template-columns:1fr;padding-top:2.5rem;gap:2rem}
+.cadeia{grid-template-columns:1fr 1fr}
+.cadeia li:nth-child(3){padding-left:0;border-left:0}
+.equipe{grid-template-columns:1fr;gap:0}
+}
+@media (max-width:600px){
+.laps-linhas{grid-template-columns:1fr}
+.laps-fatos{grid-template-columns:1fr;gap:.1rem}
+.laps-fatos dd{margin-bottom:.6rem}
+body{font-size:1.0625rem}
+.cadeia{grid-template-columns:1fr}
+.cadeia li,.cadeia li+li{padding-left:0;border-left:0;border-bottom:1px solid var(--fio)}
+.etapas{grid-template-columns:1fr}
+.linha{grid-template-columns:1fr}
+.contato dl{grid-template-columns:1fr;gap:.2rem}
+.contato dd{margin-bottom:.75rem}
+.marca img{height:46px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.cartoes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.cartao{display:flex;flex-direction:column;gap:.75rem;padding:2rem;border-radius:10px;text-decoration:none;color:inherit;border:1px solid var(--fio);background:#FFFFFF}
+.cartao img,.cartao-simbolo{display:block;height:72px;width:auto;align-self:flex-start}
+.cartao-titulo{margin-top:.5rem;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:1.9rem;line-height:1.05}
+.cartao-texto{color:var(--suave)}
+.cartao-acao{margin-top:auto;padding-top:1rem;font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.cartao-grupo{border-top:6px solid var(--laranja)}
+.cartao-grupo .cartao-titulo{color:var(--asfalto)}
+.cartao-grupo .cartao-acao{text-decoration-color:var(--laranja)}
+.cartao-laps{background:#EDF3F9;border-color:#C9D8E8;border-top:6px solid #7FB3E0}
+.cartao-laps .cartao-titulo{color:#24405E}
+.cartao-laps .cartao-texto{color:#3E4A57}
+.cartao-laps .cartao-acao{color:#24405E;text-decoration-color:#7FB3E0}
+.cartao:hover{border-color:var(--asfalto)}
+.cartao:hover .cartao-acao{color:var(--laranja-t)}
+.cartao-laps:hover .cartao-acao{color:#1A3049}
+.pagina-cabeca{padding:2.5rem 0 1rem}
+.pagina-cabeca h1{margin-top:1.25rem;font-size:clamp(2.4rem,5.5vw,3.8rem)}
+.pagina-cabeca .lead{max-width:44rem}
+.voltar{font-weight:600}
+.laps-pagina{margin-top:1rem}
+@media (max-width:760px){.cartoes{grid-template-columns:1fr}.cartao{padding:1.5rem}}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+<div class="faixa">
+<a class="marca" href="/"><img src="/logo/inovageopav-horizontal.svg" alt="InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos, Uema" width="226" height="64"></a>
+<nav aria-label="Principal"><a href="/#rede">Rede de sensores</a><a href="/pesquisas/">Pesquisas</a><a href="/laps/">LAPS</a><a href="/#equipe">Equipe</a></nav>
+</div>
+</header>
+<main id="conteudo">
+<section class="pagina-cabeca">
+<div class="faixa">
+<a class="voltar" href="/">Voltar ao início</a>
+<h1>Pesquisas do InovaGeoPav</h1>
+<p class="lead">Projetos do grupo de pesquisa InovaGeoPav em andamento e trabalhos já concluídos. O grupo foi formado em 2026 e reúne pesquisas desenvolvidas desde 2022 no Laboratório de Mecânica dos Solos e Pavimentação (LSP/Uema).</p>
+</div>
+</section>
+<section id="pesquisas" class="bloco">
+<div class="faixa">
+<div class="cabeca"><h2>Em andamento</h2></div>
+<ul class="lista"><li class="linha"><div class="meta">2025–atual<br>Maranhão 50, FAPEMA<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Gestão inteligente de pavimentos: temperatura de superfície por sensoriamento remoto termal</h3><p>Amplia o monitoramento com imagens de satélite. Relaciona a temperatura de superfície dos pavimentos asfálticos, medida em campo e por sensoriamento remoto termal, a estratégias de monitoramento e manutenção preditiva das vias do Maranhão.</p><p class="pessoas">Bolsista: Luiz Gustavo Barbosa de Amorim</p></div></li><li class="linha"><div class="meta">2025–atual<br>CNPq, Pro-Amazônia<br>Coordenação: Profa. Mariana Ramos Chrusciak (UFRR)</div><div><h3>Erosão em foco: inteligência artificial e tecnologia para avaliar e proteger solos na Amazônia Legal</h3><p>Projeto em rede com polo em Boa Vista (RR), que aplica inteligência artificial ao estudo da erosão de solos na Amazônia Legal.</p><p class="pessoas">Bolsistas: Alice Maria Rocha Braga Nunes e Rodrigo Mendes Andrade</p></div></li><li class="linha"><div class="meta">2023–atual<br>Extensão<br>Coordenação: Profa. Maria Teresinha de Medeiros Coelho</div><div><h3>Utilização de resíduos sólidos na construção de pavimentos</h3><p>Resíduos sólidos nas camadas do pavimento como meio de preservação e sustentabilidade do meio ambiente.</p></div></li></ul>
+<div class="cabeca"><h2>Concluídas</h2></div>
+<ul class="lista"><li class="linha"><div class="meta">2024<br>Trabalho de conclusão de curso<br>Orientação: Profa. Mayssa Alves da Silva</div><div><h3>Cinza do cavaco do eucalipto como fíler em misturas asfálticas usinadas a quente</h3><p>Luciano Costa Silva. Publicado como capítulo do livro <i>Desafios da Engenharia no Maranhão</i> (EDUEMA, 2026).</p></div></li><li class="linha"><div class="meta">2024<br>Trabalho de conclusão de curso<br>Orientação: Profa. Mayssa Alves da Silva</div><div><h3>Resíduos de vidro como substituto do agregado em misturas asfálticas</h3><p>Raimundo Nonato da Costa Neto.</p></div></li><li class="linha"><div class="meta">2023–2024<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Misturas asfálticas quentes no Maranhão: influência da temperatura</h3><p>Comportamento mecânico do CAUQ nas temperaturas medidas em campo na Ilha de São Luís. Resumo publicado no 39º Congresso da ANPET.</p></div></li><li class="linha"><div class="meta">2023–2024<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Solos tropicais finos pela metodologia MCT: efeito da cinza do bagaço de cana-de-açúcar</h3><p>Publicado como capítulo do livro <i>UEMA produzindo conhecimento</i> (2025).</p></div></li><li class="linha"><div class="meta">2022–2023<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Curvas de compactação de solos lateríticos do norte maranhense: Proctor e Mini-Proctor</h3><p>Comportamento geotécnico e não saturado dos solos regionais, para a aplicação do método MeDiNa no Maranhão.</p></div></li><li class="linha"><div class="meta">2022–2023<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Variação sucção-umidade e Mini-CBR em solos lateríticos maranhenses</h3><p>Relação entre a sucção do solo e a resistência à penetração no ensaio de Mini-CBR.</p></div></li></ul>
+</div>
+</section>
+</main>
+<footer class="rodape">
+<div class="faixa">
+<img src="/logo/inovageopav-horizontal-fundo-escuro.svg" alt="InovaGeoPav" width="212" height="60">
+<p>Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos da Universidade Estadual do Maranhão.</p>
+</div>
+</footer>
+</body>
+</html>

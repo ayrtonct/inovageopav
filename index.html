@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos (Uema)</title>
 <meta name="description" content="Grupo de pesquisa da Uema em geotecnia de pavimentos: solos tropicais, materiais, redes de sensores sem fio e sensoriamento remoto. Acesse o Thermoasfalto e o LAPS.">
-<meta property="og:title" content="InovaGeoPav">
-<meta property="og:description" content="Pesquisa em pavimentos, do solo ao revestimento.">
+<meta property="og:title" content="InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos (Uema)">
 <meta property="og:image" content="/logo/inovageopav-horizontal.png">
 <meta name="theme-color" content="#3A3A3A">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -137,6 +136,29 @@ body{font-size:1.0625rem}
 .marca img{height:46px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.cartoes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.cartao{display:flex;flex-direction:column;gap:.75rem;padding:2rem;border-radius:10px;text-decoration:none;color:inherit;border:1px solid var(--fio);background:#FFFFFF}
+.cartao img,.cartao-simbolo{display:block;height:72px;width:auto;align-self:flex-start}
+.cartao-titulo{margin-top:.5rem;font-family:"Barlow Semi Condensed",sans-serif;font-weight:800;font-size:1.9rem;line-height:1.05}
+.cartao-texto{color:var(--suave)}
+.cartao-acao{margin-top:auto;padding-top:1rem;font-weight:600;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.cartao-grupo{border-top:6px solid var(--laranja)}
+.cartao-grupo .cartao-titulo{color:var(--asfalto)}
+.cartao-grupo .cartao-acao{text-decoration-color:var(--laranja)}
+.cartao-laps{background:#EDF3F9;border-color:#C9D8E8;border-top:6px solid #7FB3E0}
+.cartao-laps .cartao-titulo{color:#24405E}
+.cartao-laps .cartao-texto{color:#3E4A57}
+.cartao-laps .cartao-acao{color:#24405E;text-decoration-color:#7FB3E0}
+.cartao:hover{border-color:var(--asfalto)}
+.cartao:hover .cartao-acao{color:var(--laranja-t)}
+.cartao-laps:hover .cartao-acao{color:#1A3049}
+.pagina-cabeca{padding:2.5rem 0 1rem}
+.pagina-cabeca h1{margin-top:1.25rem;font-size:clamp(2.4rem,5.5vw,3.8rem)}
+.pagina-cabeca .lead{max-width:44rem}
+.voltar{font-weight:600}
+.laps-pagina{margin-top:1rem}
+@media (max-width:760px){.cartoes{grid-template-columns:1fr}.cartao{padding:1.5rem}}
 </style>
 </head>
 <body>
@@ -144,7 +166,7 @@ body{font-size:1.0625rem}
 <header class="topo">
 <div class="faixa">
 <a class="marca" href="#inicio"><img src="/logo/inovageopav-horizontal.svg" alt="InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos, Uema" width="226" height="64"></a>
-<nav aria-label="Principal"><a href="#rede">Rede de sensores</a><a href="#laps">LAPS</a><a href="#pesquisas">Pesquisas</a><a href="#equipe">Equipe</a></nav>
+<nav aria-label="Principal"><a href="#rede">Rede de sensores</a><a href="/pesquisas/">Pesquisas</a><a href="/laps/">LAPS</a><a href="#equipe">Equipe</a></nav>
 </div>
 </header>
 <main id="conteudo">
@@ -214,45 +236,30 @@ body{font-size:1.0625rem}
 </div>
 </section>
 
-<section id="laps" class="bloco laps">
-<div class="faixa laps-grade">
-<div class="laps-intro">
-<a href="https://lapslab.com.br/" target="_blank" rel="noopener" class="laps-logo"><img src="/img/logo-laps.png" alt="LAPS, Laboratório de Aquisição e Processamento de Sinais" height="110"></a>
-<h2>Laboratório de Aquisição e Processamento de Sinais</h2>
-<p>Laboratório da Uema parceiro do InovaGeoPav na rede de sensores. Une ferramentas matemáticas, eletrônicas e computacionais para desenvolver formas de aquisição de sinais por sensores, internet e outros dispositivos, e para promover o desenvolvimento científico e tecnológico do Maranhão.</p>
-<dl class="laps-fatos">
-<dt>Criação</dt><dd>2018</dd>
-<dt>Coordenação</dt><dd>Prof. Ewaldo Santana</dd>
-<dt>Grupo</dt><dd>Inteligência Artificial e Processamento de Sinais (GPIAPS)</dd>
-<dt>Local</dt><dd>Centro de Ciências Tecnológicas, Campus Paulo VI</dd>
-</dl>
-<a class="laps-botao" href="https://lapslab.com.br/" target="_blank" rel="noopener">Visitar o site do LAPS<svg class="ext" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
-</div>
-<div class="laps-conteudo">
-<h3>Linhas de pesquisa</h3>
-<ul class="laps-linhas">
-<li><strong>Redes de sensores sem fio</strong><span>Eletrônica, sistemas de alimentação, protocolos de comunicação e topologias de rede.</span></li>
-<li><strong>Inteligência artificial</strong><span>Aprendizado de máquina, processamento de imagens e processamento estatístico de sinais.</span></li>
-</ul>
-<h3>Com o InovaGeoPav e o LSP</h3>
-<p>Sensores instalados no pavimento para monitorar o seu estado. É a rede que alimenta o <a href="https://thermoasfalto.vercel.app/" target="_blank" rel="noopener">Thermoasfalto</a>.</p>
-<h3>Outros projetos do laboratório</h3>
-<ul class="laps-projetos">
-<li>Redes de sensores para coleta de dados do solo, em parceria com a França</li>
-<li>Detecção de queimadas e desmatamento no Cerrado e na Amazônia Legal maranhense com imagens de satélite</li>
-<li>Qualidade de combustíveis com sensores de ondas acústicas</li>
-<li>Automação do aceite técnico de navios no Porto do Itaqui</li>
-</ul>
-</div>
-</div>
-</section>
-
-<section id="pesquisas" class="bloco claro">
+<section id="conheca" class="bloco claro">
 <div class="faixa">
-<div class="cabeca"><h2>Pesquisas em andamento</h2></div>
-<ul class="lista"><li class="linha"><div class="meta">2025–atual<br>Maranhão 50, FAPEMA<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Gestão inteligente de pavimentos: temperatura de superfície por sensoriamento remoto termal</h3><p>Amplia o monitoramento com imagens de satélite. Relaciona a temperatura de superfície dos pavimentos asfálticos, medida em campo e por sensoriamento remoto termal, a estratégias de monitoramento e manutenção preditiva das vias do Maranhão.</p><p class="pessoas">Bolsista: Luiz Gustavo Barbosa de Amorim</p></div></li><li class="linha"><div class="meta">2025–atual<br>CNPq, Pro-Amazônia<br>Coordenação: Profa. Mariana Ramos Chrusciak (UFRR)</div><div><h3>Erosão em foco: inteligência artificial e tecnologia para avaliar e proteger solos na Amazônia Legal</h3><p>Projeto em rede com polo em Boa Vista (RR), que aplica inteligência artificial ao estudo da erosão de solos na Amazônia Legal.</p><p class="pessoas">Bolsistas: Alice Maria Rocha Braga Nunes e Rodrigo Mendes Andrade</p></div></li><li class="linha"><div class="meta">2023–atual<br>Extensão<br>Coordenação: Profa. Maria Teresinha de Medeiros Coelho</div><div><h3>Utilização de resíduos sólidos na construção de pavimentos</h3><p>Resíduos sólidos nas camadas do pavimento como meio de preservação e sustentabilidade do meio ambiente.</p></div></li></ul>
-<div class="cabeca"><h2>Pesquisas concluídas</h2><p>O grupo foi formado em 2026 e reúne trabalhos desenvolvidos desde 2022 no Laboratório de Mecânica dos Solos e Pavimentação (LSP/Uema).</p></div>
-<ul class="lista"><li class="linha"><div class="meta">2024<br>Trabalho de conclusão de curso<br>Orientação: Profa. Mayssa Alves da Silva</div><div><h3>Cinza do cavaco do eucalipto como fíler em misturas asfálticas usinadas a quente</h3><p>Luciano Costa Silva. Publicado como capítulo do livro <i>Desafios da Engenharia no Maranhão</i> (EDUEMA, 2026).</p></div></li><li class="linha"><div class="meta">2024<br>Trabalho de conclusão de curso<br>Orientação: Profa. Mayssa Alves da Silva</div><div><h3>Resíduos de vidro como substituto do agregado em misturas asfálticas</h3><p>Raimundo Nonato da Costa Neto.</p></div></li><li class="linha"><div class="meta">2023–2024<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Misturas asfálticas quentes no Maranhão: influência da temperatura</h3><p>Comportamento mecânico do CAUQ nas temperaturas medidas em campo na Ilha de São Luís. Resumo publicado no 39º Congresso da ANPET.</p></div></li><li class="linha"><div class="meta">2023–2024<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Solos tropicais finos pela metodologia MCT: efeito da cinza do bagaço de cana-de-açúcar</h3><p>Publicado como capítulo do livro <i>UEMA produzindo conhecimento</i> (2025).</p></div></li><li class="linha"><div class="meta">2022–2023<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Curvas de compactação de solos lateríticos do norte maranhense: Proctor e Mini-Proctor</h3><p>Comportamento geotécnico e não saturado dos solos regionais, para a aplicação do método MeDiNa no Maranhão.</p></div></li><li class="linha"><div class="meta">2022–2023<br>Coordenação: Profa. Mayssa Alves da Silva</div><div><h3>Variação sucção-umidade e Mini-CBR em solos lateríticos maranhenses</h3><p>Relação entre a sucção do solo e a resistência à penetração no ensaio de Mini-CBR.</p></div></li></ul>
+<div class="cabeca"><h2>Pesquisas e laboratório parceiro</h2></div>
+<div class="cartoes">
+<a class="cartao cartao-grupo" href="/pesquisas/">
+<svg class="cartao-simbolo" aria-hidden="true" width="72" height="72" viewBox="0 0 400 400" ><path d="M200 18 L330 78 L330 150 L200 212 L70 150 L70 78 Z" fill="#3A3A3A"></path>
+<path d="M70 166 L200.0 228 L330 166 L330 210 L200.0 272 L70 210 Z" fill="#9A6A43"></path>
+<path d="M70 226 L200.0 288 L330 226 L330 270 L200.0 332 L70 270 Z" fill="#D2AA80"></path>
+<path d="M108 286 L200.0 330 L292 286 L292 312 L200.0 356 L108 312 Z" fill="#F28C1B"></path>
+<polyline points="118,120 200,150 282,112" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"></polyline>
+<circle cx="118" cy="120" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="200" cy="150" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle>
+<circle cx="282" cy="112" r="20" fill="#F28C1B" stroke="#FFFFFF" stroke-width="8"></circle></svg>
+<span class="cartao-titulo">Pesquisas do InovaGeoPav</span>
+<span class="cartao-texto">3 projetos em andamento e 6 trabalhos concluídos, de solos tropicais a sensoriamento remoto e redes de sensores.</span>
+<span class="cartao-acao">Ver as pesquisas</span>
+</a>
+<a class="cartao cartao-laps" href="/laps/">
+<img src="/img/logo-laps.png" alt="" height="72">
+<span class="cartao-titulo">Laboratório de Aquisição e Processamento de Sinais</span>
+<span class="cartao-texto">Parceiro do grupo na rede de sensores. Linhas de pesquisa, projetos e coordenação do LAPS.</span>
+<span class="cartao-acao">Conhecer o LAPS</span>
+</a>
+</div>
 </div>
 </section>
 
@@ -272,7 +279,7 @@ body{font-size:1.0625rem}
 </div>
 </section>
 
-<section class="bloco claro">
+<section class="bloco">
 <div class="faixa">
 <div class="cabeca"><h2>Laboratórios e parceiros</h2><p>Os ensaios de solos e misturas asfálticas são feitos no LSP. A rede de sensores é desenvolvida com o LAPS. O projeto Erosão em foco tem polo na Universidade Federal de Roraima (UFRR). Fomento: FAPEMA e CNPq.</p></div>
 <div class="logos">
@@ -281,7 +288,6 @@ body{font-size:1.0625rem}
 </div>
 </div>
 </section>
-
 </main>
 <footer class="rodape">
 <div class="faixa">
