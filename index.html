@@ -92,13 +92,41 @@ figcaption{margin-top:.5rem;font-size:.95rem;color:var(--suave)}
 .rodape img{display:block;height:56px;width:auto}
 .rodape p{max-width:34rem;font-size:1rem}
 .rodape a{color:#FFFFFF}
+
+.laps{background:#EDF3F9;border-top:0;--laps-azul:#24405E;--laps-claro:#7FB3E0}
+.laps h2,.laps h3{color:var(--laps-azul)}
+.laps-grade{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:3.5rem}
+.laps-logo img{display:block;height:110px;width:auto}
+.laps-intro h2{margin-top:1.5rem;font-weight:800;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.05}
+.laps-intro>p{margin-top:1rem;color:#3E4A57}
+.laps-fatos{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:.5rem 1.25rem;margin:1.75rem 0 2rem;padding-top:1.25rem;border-top:1px solid #C9D8E8}
+.laps-fatos dt{font-weight:600;color:var(--laps-azul)}
+.laps-fatos dd{margin:0;color:#3E4A57}
+.laps-botao{display:inline-flex;align-items:center;gap:.6rem;min-height:48px;padding:0 1.4rem;border-radius:999px;background:var(--laps-azul);color:#FFFFFF;font-weight:600;text-decoration:none}
+.laps-botao:hover{background:#1A3049;color:#FFFFFF}
+.laps-botao .ext{width:16px;height:16px}
+.laps-conteudo h3{font-size:1.4rem;font-weight:700;margin:0 0 .75rem}
+.laps-conteudo h3+p,.laps-conteudo ul{margin-bottom:2.25rem}
+.laps-conteudo p{color:#3E4A57}
+.laps-linhas{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.laps-linhas li{display:flex;flex-direction:column;gap:.3rem;padding:1rem 1.1rem;border-top:3px solid var(--laps-claro);background:#FFFFFF}
+.laps-linhas strong{color:var(--laps-azul)}
+.laps-linhas span{font-size:1rem;color:#3E4A57}
+.laps-projetos{padding:0 0 0 1.2rem;margin:0;color:#3E4A57}
+.laps-projetos li{padding:.3rem 0}
+.laps-projetos li::marker{color:var(--laps-claro)}
+.laps a:not(.laps-botao){text-decoration-color:var(--laps-claro)}
 @media (max-width:900px){
+.laps-grade{grid-template-columns:1fr;gap:2.5rem}
 .abertura{grid-template-columns:1fr;padding-top:2.5rem;gap:2rem}
 .cadeia{grid-template-columns:1fr 1fr}
 .cadeia li:nth-child(3){padding-left:0;border-left:0}
 .equipe{grid-template-columns:1fr;gap:0}
 }
 @media (max-width:600px){
+.laps-linhas{grid-template-columns:1fr}
+.laps-fatos{grid-template-columns:1fr;gap:.1rem}
+.laps-fatos dd{margin-bottom:.6rem}
 body{font-size:1.0625rem}
 .cadeia{grid-template-columns:1fr}
 .cadeia li,.cadeia li+li{padding-left:0;border-left:0;border-bottom:1px solid var(--fio)}
@@ -116,7 +144,7 @@ body{font-size:1.0625rem}
 <header class="topo">
 <div class="faixa">
 <a class="marca" href="#inicio"><img src="/logo/inovageopav-horizontal.svg" alt="InovaGeoPav, Grupo de Pesquisa em Inovação e Geotecnia de Pavimentos, Uema" width="226" height="64"></a>
-<nav aria-label="Principal"><a href="#rede">Rede de sensores</a><a href="#pesquisas">Pesquisas</a><a href="#equipe">Equipe</a></nav>
+<nav aria-label="Principal"><a href="#rede">Rede de sensores</a><a href="#laps">LAPS</a><a href="#pesquisas">Pesquisas</a><a href="#equipe">Equipe</a></nav>
 </div>
 </header>
 <main id="conteudo">
@@ -182,6 +210,39 @@ body{font-size:1.0625rem}
 <div class="etapas">
 <div><p class="quando">2024–2025, concluída</p><h3>Criação do campo experimental</h3><p>Projeto do pavimento instrumentado, sistema embarcado do nó, topologia e consumo de energia da rede.</p></div>
 <div><p class="quando">2025–atual</p><h3>Validação e análise de dados</h3><p>Tratamento, análise e visualização das temperaturas e do desempenho térmico do pavimento.</p></div>
+</div>
+</div>
+</section>
+
+<section id="laps" class="bloco laps">
+<div class="faixa laps-grade">
+<div class="laps-intro">
+<a href="https://lapslab.com.br/" target="_blank" rel="noopener" class="laps-logo"><img src="/img/logo-laps.png" alt="LAPS, Laboratório de Aquisição e Processamento de Sinais" height="110"></a>
+<h2>Laboratório de Aquisição e Processamento de Sinais</h2>
+<p>Laboratório da Uema parceiro do InovaGeoPav na rede de sensores. Une ferramentas matemáticas, eletrônicas e computacionais para desenvolver formas de aquisição de sinais por sensores, internet e outros dispositivos, e para promover o desenvolvimento científico e tecnológico do Maranhão.</p>
+<dl class="laps-fatos">
+<dt>Criação</dt><dd>2018</dd>
+<dt>Coordenação</dt><dd>Prof. Ewaldo Santana</dd>
+<dt>Grupo</dt><dd>Inteligência Artificial e Processamento de Sinais (GPIAPS)</dd>
+<dt>Local</dt><dd>Centro de Ciências Tecnológicas, Campus Paulo VI</dd>
+</dl>
+<a class="laps-botao" href="https://lapslab.com.br/" target="_blank" rel="noopener">Visitar o site do LAPS<svg class="ext" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+</div>
+<div class="laps-conteudo">
+<h3>Linhas de pesquisa</h3>
+<ul class="laps-linhas">
+<li><strong>Redes de sensores sem fio</strong><span>Eletrônica, sistemas de alimentação, protocolos de comunicação e topologias de rede.</span></li>
+<li><strong>Inteligência artificial</strong><span>Aprendizado de máquina, processamento de imagens e processamento estatístico de sinais.</span></li>
+</ul>
+<h3>Com o InovaGeoPav e o LSP</h3>
+<p>Sensores instalados em rodovias para informar o estado do pavimento e, no futuro, alertar motoristas pela Internet das Coisas. É a rede que alimenta o <a href="https://thermoasfalto.vercel.app/" target="_blank" rel="noopener">Thermoasfalto</a>.</p>
+<h3>Outros projetos do laboratório</h3>
+<ul class="laps-projetos">
+<li>Redes de sensores para coleta de dados do solo, em parceria com a França</li>
+<li>Detecção de queimadas e desmatamento no Cerrado e na Amazônia Legal maranhense com imagens de satélite</li>
+<li>Qualidade de combustíveis com sensores de ondas acústicas</li>
+<li>Automação do aceite técnico de navios no Porto do Itaqui</li>
+</ul>
 </div>
 </div>
 </section>
