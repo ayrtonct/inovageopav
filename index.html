@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InovaGeoPav — Grupo de pesquisa em geotecnia de pavimentos</title>
+<meta name="description" content="InovaGeoPav: grupo de pesquisa da Uema em inovação e geotecnia de pavimentos. Solos tropicais, redes de sensores sem fio e sensoriamento remoto. Acesse o Thermoasfalto e o LAPS.">
+<meta property="og:title" content="InovaGeoPav">
+<meta property="og:description" content="Inovação em geotecnia de pavimentos, do solo ao revestimento.">
+<meta name="theme-color" content="#14171B">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
+<style>
+body{margin:0}
+html{scroll-behavior:smooth}
+a{color:#2B2B2B}a:hover{color:#555555}
+.card{transition:border-color .15s ease, transform .15s ease}
+.card:hover{border-color:#1E2329 !important; transform:translateY(-2px)}
+.nav:hover{color:#FFFFFF !important}
+.btn:hover{background:#F7A84A !important}
+.pill:hover{opacity:.88}
+.btn2:hover{border-color:#F2F2EF !important}
+a:focus-visible{outline:3px solid #F28C1B; outline-offset:3px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.card{transition:none}}
+</style>
+</head>
+<body>
+<div style="background: #FFFFFF; color: #2B2B2B; font-family: Inter, system-ui, sans-serif">
+<header style="background: #14171B; color: #F2F2EF">
+<nav aria-label="Principal" style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem">
+<a href="#inicio" style="display: flex; align-items: center; gap: 0.6rem; color: #F2F2EF; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.15rem"><svg width="36" height="36" viewBox="0 0 400 400" role="img" aria-label="Símbolo InovaGeoPav"><clipPath id="top-nav"><rect x="0" y="0" width="400" height="200"></rect></clipPath>
+<path d="M200.00 36.00 L214.15 36.61 L224.06 9.51 L250.66 14.80 L249.45 43.63 L262.76 48.48 L275.60 54.46 L295.13 33.22 L317.68 48.29 L305.53 74.46 L315.97 84.03 L325.54 94.47 L351.71 82.32 L366.78 104.87 L345.54 124.40 L351.52 137.24 L356.37 150.55 L385.20 149.34 L390.49 175.94 L363.39 185.85 L364.00 200.00 L363.39 214.15 L390.49 224.06 L385.20 250.66 L356.37 249.45 L351.52 262.76 L345.54 275.60 L366.78 295.13 L351.71 317.68 L325.54 305.53 L315.97 315.97 L305.53 325.54 L317.68 351.71 L295.13 366.78 L275.60 345.54 L262.76 351.52 L249.45 356.37 L250.66 385.20 L224.06 390.49 L214.15 363.39 L200.00 364.00 L185.85 363.39 L175.94 390.49 L149.34 385.20 L150.55 356.37 L137.24 351.52 L124.40 345.54 L104.87 366.78 L82.32 351.71 L94.47 325.54 L84.03 315.97 L74.46 305.53 L48.29 317.68 L33.22 295.13 L54.46 275.60 L48.48 262.76 L43.63 249.45 L14.80 250.66 L9.51 224.06 L36.61 214.15 L36.00 200.00 L36.61 185.85 L9.51 175.94 L14.80 149.34 L43.63 150.55 L48.48 137.24 L54.46 124.40 L33.22 104.87 L48.29 82.32 L74.46 94.47 L84.03 84.03 L94.47 74.46 L82.32 48.29 L104.87 33.22 L124.40 54.46 L137.24 48.48 L150.55 43.63 L149.34 14.80 L175.94 9.51 L185.85 36.61 Z" fill="#F28C1B" clip-path="url(#top-nav)"></path>
+<circle cx="200" cy="200" r="140" fill="#14171B"></circle>
+<clipPath id="bot-nav"><path d="M8 200 A192 192 0 0 0 392 200 Z"></path></clipPath>
+<g clip-path="url(#bot-nav)">
+<rect x="0" y="200" width="400" height="45" fill="#2B2B2B"></rect>
+<rect x="0" y="244" width="400" height="41" fill="#5E3B22"></rect>
+<rect x="0" y="284" width="400" height="41" fill="#8A5530"></rect>
+<rect x="0" y="324" width="400" height="71" fill="#C69C72"></rect>
+<rect x="0" y="242" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="282" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="322" width="400" height="4" fill="#14171B"></rect>
+<line x1="22" y1="222" x2="378" y2="222" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="22 16"></line>
+</g>
+<line x1="200" y1="200" x2="116" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="116" y1="148" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="92" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<circle cx="116.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="92.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="284.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="200.00" r="15" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle></svg><span>InovaGeoPav</span></a>
+<div style="display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-size: 0.95rem"><a class="nav" href="#projetos" style="color: #D6D6D2; text-decoration: none; padding: 0.6rem 0">Acesso rápido</a><a class="nav" href="#rede" style="color: #D6D6D2; text-decoration: none; padding: 0.6rem 0">Rede de sensores</a><a class="nav" href="#pesquisas" style="color: #D6D6D2; text-decoration: none; padding: 0.6rem 0">Pesquisas</a><a class="nav" href="#equipe" style="color: #D6D6D2; text-decoration: none; padding: 0.6rem 0">Equipe</a><a class="nav" href="#contato" style="color: #D6D6D2; text-decoration: none; padding: 0.6rem 0">Contato</a></div>
+</nav>
+<div id="inicio" style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-wrap: wrap-reverse; align-items: center; justify-content: space-between; gap: 2.5rem; padding-top: 3.5rem; padding-bottom: 4.5rem">
+<div style="flex: 1 1 26rem; min-width: 0; display: flex; flex-direction: column; gap: 1.25rem">
+<p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #F28C1B">Grupo de pesquisa · Uema</p>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(2.75rem, 8vw, 4.75rem); line-height: 0.95; letter-spacing: -0.04em">Inova<span style="color: #F28C1B">Geo</span>Pav</h1>
+<p style="margin: 0; max-width: 34rem; font-size: 1.15rem; line-height: 1.6; color: #D6D6D2; text-wrap: pretty">Inovação e geotecnia de pavimentos, do solo ao revestimento: solos tropicais, materiais, redes de sensores sem fio e sensoriamento remoto aplicados às rodovias do Maranhão.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.5rem">
+<a class="btn" href="#projetos" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 1.4rem; border-radius: 999px; background: #F28C1B; color: #1C1C1C; font-weight: 600; text-decoration: none">Acessar projetos</a>
+<a class="btn2" href="#pesquisas" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 1.4rem; border-radius: 999px; border: 1px solid #4A4F57; color: #F2F2EF; font-weight: 600; text-decoration: none">Ver pesquisas</a>
+</div>
+</div>
+<div style="flex: 0 1 20rem; display: flex; justify-content: center"><svg width="300" height="300" style="width: 100%; max-width: 300px; height: auto" viewBox="0 0 400 400" role="img" aria-label="Símbolo InovaGeoPav"><clipPath id="top-hero"><rect x="0" y="0" width="400" height="200"></rect></clipPath>
+<path d="M200.00 36.00 L214.15 36.61 L224.06 9.51 L250.66 14.80 L249.45 43.63 L262.76 48.48 L275.60 54.46 L295.13 33.22 L317.68 48.29 L305.53 74.46 L315.97 84.03 L325.54 94.47 L351.71 82.32 L366.78 104.87 L345.54 124.40 L351.52 137.24 L356.37 150.55 L385.20 149.34 L390.49 175.94 L363.39 185.85 L364.00 200.00 L363.39 214.15 L390.49 224.06 L385.20 250.66 L356.37 249.45 L351.52 262.76 L345.54 275.60 L366.78 295.13 L351.71 317.68 L325.54 305.53 L315.97 315.97 L305.53 325.54 L317.68 351.71 L295.13 366.78 L275.60 345.54 L262.76 351.52 L249.45 356.37 L250.66 385.20 L224.06 390.49 L214.15 363.39 L200.00 364.00 L185.85 363.39 L175.94 390.49 L149.34 385.20 L150.55 356.37 L137.24 351.52 L124.40 345.54 L104.87 366.78 L82.32 351.71 L94.47 325.54 L84.03 315.97 L74.46 305.53 L48.29 317.68 L33.22 295.13 L54.46 275.60 L48.48 262.76 L43.63 249.45 L14.80 250.66 L9.51 224.06 L36.61 214.15 L36.00 200.00 L36.61 185.85 L9.51 175.94 L14.80 149.34 L43.63 150.55 L48.48 137.24 L54.46 124.40 L33.22 104.87 L48.29 82.32 L74.46 94.47 L84.03 84.03 L94.47 74.46 L82.32 48.29 L104.87 33.22 L124.40 54.46 L137.24 48.48 L150.55 43.63 L149.34 14.80 L175.94 9.51 L185.85 36.61 Z" fill="#F28C1B" clip-path="url(#top-hero)"></path>
+<circle cx="200" cy="200" r="140" fill="#14171B"></circle>
+<clipPath id="bot-hero"><path d="M8 200 A192 192 0 0 0 392 200 Z"></path></clipPath>
+<g clip-path="url(#bot-hero)">
+<rect x="0" y="200" width="400" height="45" fill="#2B2B2B"></rect>
+<rect x="0" y="244" width="400" height="41" fill="#5E3B22"></rect>
+<rect x="0" y="284" width="400" height="41" fill="#8A5530"></rect>
+<rect x="0" y="324" width="400" height="71" fill="#C69C72"></rect>
+<rect x="0" y="242" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="282" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="322" width="400" height="4" fill="#14171B"></rect>
+<line x1="22" y1="222" x2="378" y2="222" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="22 16"></line>
+</g>
+<line x1="200" y1="200" x2="116" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="116" y1="148" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="92" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<circle cx="116.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="92.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="284.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="200.00" r="15" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle></svg></div>
+</div>
+<div aria-hidden="true" style="display: flex; flex-direction: column"><div style="height: 12px; background: #2B2B2B"></div><div style="height: 12px; background: #5E3B22"></div><div style="height: 12px; background: #8A5530"></div><div style="height: 12px; background: #C69C72"></div></div>
+</header>
+<main>
+<section id="projetos" style="padding: 4.5rem 0; background: #F7F4F0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-direction: column; gap: 2rem">
+<div><p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Acesso rápido</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Painéis e laboratórios</h2></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem">
+<a class="card" href="https://thermoasfalto.vercel.app/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 1.25rem; padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; color: #2B2B2B; text-decoration: none">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.1; letter-spacing: -0.01em">thermo<span style="color: #C2410C">asfalto</span></span>
+<span style="font-size: 0.95rem; line-height: 1.55; color: #555555">Painel da rede de sensores: temperatura do pavimento em tempo real e histórico.</span>
+<span style="font-size: 0.85rem; font-weight: 600; color: #2B2B2B">thermoasfalto.vercel.app</span>
+</span>
+<span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #2B2B2B; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></span>
+</a>
+<a class="card" href="https://lapslab.com.br/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 1.25rem; padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; color: #2B2B2B; text-decoration: none">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.1; letter-spacing: -0.01em">LAPS</span>
+<span style="font-size: 0.95rem; line-height: 1.55; color: #555555">Laboratório de Aquisição e Processamento de Sinais da Uema, parceiro da rede de sensores.</span>
+<span style="font-size: 0.85rem; font-weight: 600; color: #2B2B2B">lapslab.com.br</span>
+</span>
+<span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #2B2B2B; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></span>
+</a>
+<a class="card" href="http://lattes.cnpq.br/9817216775515273" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 1.25rem; padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; color: #2B2B2B; text-decoration: none">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.1; letter-spacing: -0.01em">Lattes</span>
+<span style="font-size: 0.95rem; line-height: 1.55; color: #555555">Currículo da coordenadora, com projetos, publicações e orientações.</span>
+<span style="font-size: 0.85rem; font-weight: 600; color: #2B2B2B">lattes.cnpq.br</span>
+</span>
+<span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #2B2B2B; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></span>
+</a>
+</div>
+</div>
+</section>
+<section id="sobre" style="padding: 4.5rem 0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 2.5rem">
+<div style="flex: 1 1 24rem; min-width: 0; display: flex; flex-direction: column; gap: 1rem">
+<p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Sobre</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Do solo ao revestimento</h2>
+<p style="margin: 0.5rem 0 0; font-size: 1.05rem; line-height: 1.7; color: #555555">O InovaGeoPav reúne as pesquisas da Universidade Estadual do Maranhão em geotecnia de pavimentos: o comportamento dos solos tropicais, novos materiais para as camadas do pavimento e o monitoramento de rodovias com redes de sensores e imagens de satélite. O grupo foi formado recentemente e dá continuidade a projetos desenvolvidos desde 2022 no Laboratório de Mecânica dos Solos e Pavimentação (LSP/Uema).</p>
+</div>
+<div style="flex: 1 1 20rem; min-width: 0; padding: 1.5rem; border-radius: 16px; background: #F7F4F0; display: flex; flex-direction: column; gap: 0.75rem; align-self: start">
+<p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Coordenação</p>
+<p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.35rem">Profa. Dra. Mayssa Alves da Silva</p>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Doutora em Engenharia Civil (Geotecnia) pela UFPE e mestra em Engenharia de Transportes pelo IME. Professora do curso de Engenharia Civil da Uema desde 2022 e chefe do LSP/Uema.</p>
+<div><a class="pill" href="http://lattes.cnpq.br/9817216775515273" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 1.1rem; border-radius: 999px; background: #FFFFFF; color: #2B2B2B; border: 1px solid #E2DDD6; font-weight: 600; font-size: 0.95rem; text-decoration: none">Currículo Lattes<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div>
+</div>
+<div style="flex: 1 1 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: 1rem">
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h24"></path><path d="M4 16h24"></path><path d="M4 22h24"></path><rect x="4" y="6" width="24" height="20" rx="3"></rect></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">Geotecnia de pavimentos</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Solos tropicais lateríticos do Maranhão e seu uso nas camadas do pavimento.</p>
+</div>
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="22" r="3"></circle><circle cx="16" cy="8" r="3"></circle><circle cx="24" cy="22" r="3"></circle><path d="M10 20l4.5-9.5"></path><path d="M17.5 10.5L22 20"></path><path d="M11 22h10"></path></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">Redes de sensores sem fio</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Instrumentação e monitoramento contínuo de rodovias em campo.</p>
+</div>
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="12" width="8" height="8" rx="1.5"></rect><path d="M4 8l6 6M28 24l-6-6"></path><rect x="2" y="4" width="8" height="6" rx="1" transform="rotate(45 6 7)"></rect><rect x="22" y="22" width="8" height="6" rx="1" transform="rotate(45 26 25)"></rect><path d="M22 6a6 6 0 0 1 4 4"></path></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">Sensoriamento remoto e IA</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Imagens de satélite e inteligência artificial para avaliar pavimentos e solos.</p>
+</div>
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 26c0-12 8-20 20-20 0 12-8 20-20 20z"></path><path d="M6 26l10-10"></path></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">Materiais sustentáveis</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Resíduos e subprodutos, como a cinza do bagaço de cana, em solos e misturas asfálticas.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rede" style="padding: 4.5rem 0; background: #F7F4F0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-direction: column; gap: 2rem">
+<div style="max-width: 46rem; display: flex; flex-direction: column; gap: 1rem">
+<p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Projeto em destaque</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Rede de sensores sem fio para monitoramento em rodovias</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 0.4rem"><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #FDEBD6; color: #8A4500">Em andamento</span><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #F1EEEA; color: #4A4A4A">Uema</span><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #F1EEEA; color: #4A4A4A">Parceria com o LAPS</span></div>
+<p style="margin: 0; font-size: 1.05rem; line-height: 1.7; color: #555555">Um campo experimental no Campus Paulo VI tem sondas de temperatura instaladas em diferentes profundidades do pavimento. As leituras seguem pela rede de sensores, desenvolvida em parceria com o Laboratório de Aquisição e Processamento de Sinais (LAPS/Uema), até o painel Thermoasfalto.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 0.75rem"><a class="pill" href="https://thermoasfalto.vercel.app/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 1.1rem; border-radius: 999px; background: #2B2B2B; color: #FFFFFF; font-weight: 600; font-size: 0.95rem; text-decoration: none">Abrir o Thermoasfalto<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a><a class="pill" href="https://lapslab.com.br/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem; min-height: 44px; padding: 0 1.1rem; border-radius: 999px; background: #FFFFFF; color: #2B2B2B; border: 1px solid #E2DDD6; font-weight: 600; font-size: 0.95rem; text-decoration: none">Conhecer o LAPS<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a></div>
+</div>
+<figure style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; padding: clamp(1rem, 4vw, 2rem); border-radius: 20px; background: #FFFFFF; border: 1px solid #E2DDD6">
+<div style="flex: 1 1 20rem; min-width: 0"><svg viewBox="0 0 420 380" width="100%" role="img" aria-label="Corte do pavimento com o nó sensor e sondas de temperatura na superfície, no revestimento e na base" style="display: block; max-width: 30rem; margin: 0 auto">
+<rect x="200" y="22" width="140" height="60" rx="12" fill="#2B2B2B"></rect>
+<text x="270" y="50" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="18" fill="#FFFFFF">Nó sensor</text>
+<text x="270" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#D6D6D2">LoRa</text>
+<line x1="318" y1="22" x2="318" y2="12" stroke="#2B2B2B" stroke-width="3" stroke-linecap="round"></line>
+<path d="M323.2 6.6 A9 9 0 0 1 326.7 16.3" fill="none" stroke="#F28C1B" stroke-width="2.5" stroke-linecap="round"></path>
+<path d="M327.2 0.9 A16 16 0 0 1 333.5 18.1" fill="none" stroke="#F28C1B" stroke-width="2.5" stroke-linecap="round"></path>
+<path d="M331.2 -4.8 A23 23 0 0 1 340.2 20.0" fill="none" stroke="#F28C1B" stroke-width="2.5" stroke-linecap="round"></path>
+<rect x="20" y="120" width="380" height="80" fill="#2B2B2B"></rect>
+<rect x="20" y="200" width="380" height="60" fill="#5E3B22"></rect>
+<rect x="20" y="260" width="380" height="54" fill="#8A5530"></rect>
+<rect x="20" y="314" width="380" height="56" fill="#C69C72"></rect>
+<text x="390" y="305" text-anchor="end" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#2B2B2B">Sub-base</text>
+<text x="390" y="362" text-anchor="end" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#FFFFFF">Subleito</text>
+<line x1="270" y1="82" x2="270" y2="222" stroke="#F28C1B" stroke-width="3"></line>
+<line x1="246" y1="120" x2="294" y2="120" stroke="#F28C1B" stroke-width="3"></line>
+<circle cx="246" cy="120" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<circle cx="294" cy="120" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<text x="34" y="112" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#2B2B2B">Superfície · 0 cm</text>
+<line x1="246" y1="168" x2="294" y2="168" stroke="#F28C1B" stroke-width="3"></line>
+<circle cx="246" cy="168" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<circle cx="294" cy="168" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<text x="34" y="172" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#FFFFFF">Revestimento · 2 cm</text>
+<line x1="246" y1="222" x2="294" y2="222" stroke="#F28C1B" stroke-width="3"></line>
+<circle cx="246" cy="222" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<circle cx="294" cy="222" r="7" fill="#F28C1B" stroke="#FFFFFF" stroke-width="2.5"></circle>
+<text x="34" y="226" font-family="Inter, sans-serif" font-weight="600" font-size="16" fill="#FFFFFF">Base · 4 cm</text>
+</svg></div>
+<div style="flex: 1 1 20rem; min-width: 0"><div style="display: flex; flex-direction: column"><div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF">
+<span style="flex: none; width: 2.75rem; height: 2.75rem; border-radius: 12px; background: #FDEBD6; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="9" width="18" height="16" rx="3"></rect><path d="M21 9V3"></path><path d="M12 25v4M20 25v4"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem">Nó sensor</span>
+<span style="font-size: 0.92rem; line-height: 1.5; color: #555555">Seis sondas de temperatura, em pares, medem a superfície, o revestimento e a base.</span>
+</span>
+</div><div aria-hidden="false" style="display: flex; align-items: center; gap: 0.75rem; padding-left: 2.35rem; height: 2.5rem">
+<span style="width: 2px; height: 100%; background: repeating-linear-gradient(to bottom, #A85400 0 4px, transparent 4px 8px)"></span>
+<span style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: #8A4500; background: #FDEBD6; padding: 0.15rem 0.6rem; border-radius: 999px">Rádio LoRa</span>
+</div><div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF">
+<span style="flex: none; width: 2.75rem; height: 2.75rem; border-radius: 12px; background: #FDEBD6; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="15" width="22" height="10" rx="3"></rect><path d="M10 15V7M22 15V7"></path><circle cx="11" cy="20" r="1"></circle><circle cx="16" cy="20" r="1"></circle></svg></span>
+<span style="display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem">Gateway</span>
+<span style="font-size: 0.92rem; line-height: 1.5; color: #555555">Recebe as leituras do nó e as encaminha para a internet.</span>
+</span>
+</div><div aria-hidden="false" style="display: flex; align-items: center; gap: 0.75rem; padding-left: 2.35rem; height: 2.5rem">
+<span style="width: 2px; height: 100%; background: repeating-linear-gradient(to bottom, #A85400 0 4px, transparent 4px 8px)"></span>
+<span style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: #8A4500; background: #FDEBD6; padding: 0.15rem 0.6rem; border-radius: 999px">Wi-Fi</span>
+</div><div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF">
+<span style="flex: none; width: 2.75rem; height: 2.75rem; border-radius: 12px; background: #FDEBD6; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="5" width="20" height="9" rx="2"></rect><rect x="6" y="18" width="20" height="9" rx="2"></rect><path d="M10 9.5h2M10 22.5h2"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem">Servidor</span>
+<span style="font-size: 0.92rem; line-height: 1.5; color: #555555">A API da rede de sensores guarda e organiza as medições.</span>
+</span>
+</div><div aria-hidden="false" style="display: flex; align-items: center; gap: 0.75rem; padding-left: 2.35rem; height: 2.5rem">
+<span style="width: 2px; height: 100%; background: repeating-linear-gradient(to bottom, #A85400 0 4px, transparent 4px 8px)"></span>
+<span style="font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: #8A4500; background: #FDEBD6; padding: 0.15rem 0.6rem; border-radius: 999px">Internet</span>
+</div><div style="display: flex; gap: 1rem; align-items: flex-start; padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF">
+<span style="flex: none; width: 2.75rem; height: 2.75rem; border-radius: 12px; background: #FDEBD6; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="6" width="24" height="18" rx="3"></rect><path d="M8 19l5-5 4 3 6-7"></path><path d="M12 28h8"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.05rem">Painel Thermoasfalto</span>
+<span style="font-size: 0.92rem; line-height: 1.5; color: #555555">Mostra temperaturas, histórico e estado dos nós, atualizando a cada 30 segundos.</span>
+</span>
+</div></div></div>
+<figcaption style="flex-basis: 100%; font-size: 0.85rem; color: #555555">Esquema fora de escala. Cada ponto de coleta tem o próprio gateway.</figcaption>
+</figure>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem">
+<li style="padding: 1.25rem 1.5rem; border-radius: 16px; background: #FFFFFF; border: 1px solid #E2DDD6; display: flex; flex-direction: column; gap: 0.35rem"><span style="font-size: 0.85rem; font-weight: 600; color: #A85400">Etapa 1 · 2024–2025 · concluída</span><span style="font-weight: 600">Criação do campo experimental</span><span style="font-size: 0.92rem; line-height: 1.55; color: #555555">Projeto do pavimento instrumentado, sistema embarcado do nó, topologia e consumo de energia da rede.</span></li>
+<li style="padding: 1.25rem 1.5rem; border-radius: 16px; background: #FFFFFF; border: 1px solid #E2DDD6; display: flex; flex-direction: column; gap: 0.35rem"><span style="font-size: 0.85rem; font-weight: 600; color: #A85400">Etapa 2 · 2025–atual</span><span style="font-weight: 600">Validação e análise de dados do campo experimental</span><span style="font-size: 0.92rem; line-height: 1.55; color: #555555">Tratamento, análise e visualização das temperaturas e do desempenho térmico do pavimento.</span></li>
+</ol>
+</div>
+</section>
+<section id="pesquisas" style="padding: 4.5rem 0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-direction: column; gap: 2rem">
+<div><p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Pesquisas</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Projetos em andamento</h2></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1rem">
+<article style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.75rem">
+<div style="display: flex; flex-wrap: wrap; gap: 0.4rem"><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #FDEBD6; color: #8A4500">Em andamento</span><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #F1EEEA; color: #4A4A4A">Satélite</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.25; text-wrap: balance">Gestão inteligente de pavimentos: temperatura de superfície por sensoriamento remoto termal</h3>
+<p style="margin: 0; font-size: 0.85rem; font-weight: 600; color: #555555">2025–atual · Maranhão 50 · FAPEMA</p>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Amplia o monitoramento com imagens de satélite: relaciona a temperatura de superfície dos pavimentos asfálticos, medida em campo e por sensoriamento remoto termal, a estratégias de monitoramento e manutenção preditiva das vias do Maranhão.</p>
+<p style="margin: 0; font-size: 0.9rem; line-height: 1.5; color: #2B2B2B"><span style="font-weight: 600">Bolsistas:</span> Luiz Gustavo Barbosa de Amorim</p>
+</article>
+<article style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.75rem">
+<div style="display: flex; flex-wrap: wrap; gap: 0.4rem"><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #FDEBD6; color: #8A4500">Em andamento</span><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #F1EEEA; color: #4A4A4A">Parceria UFRR</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.25; text-wrap: balance">Erosão em foco: inteligência artificial e tecnologia para avaliar e proteger solos na Amazônia Legal</h3>
+<p style="margin: 0; font-size: 0.85rem; font-weight: 600; color: #555555">2025–atual · CNPq (Pro-Amazônia) · coordenação: Profa. Mariana Ramos Chrusciak (UFRR)</p>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Projeto em rede, com polo em Boa Vista (RR), que aplica inteligência artificial ao estudo da erosão de solos na Amazônia Legal.</p>
+<p style="margin: 0; font-size: 0.9rem; line-height: 1.5; color: #2B2B2B"><span style="font-weight: 600">Bolsistas:</span> Alice Maria Rocha Braga Nunes e Rodrigo Mendes Andrade</p>
+</article>
+<article style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.75rem">
+<div style="display: flex; flex-wrap: wrap; gap: 0.4rem"><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #FDEBD6; color: #8A4500">Em andamento</span><span style="display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.2rem 0.6rem; border-radius: 999px; background: #F1EEEA; color: #4A4A4A">Extensão</span></div>
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.25; text-wrap: balance">Utilização de resíduos sólidos na construção de pavimentos</h3>
+<p style="margin: 0; font-size: 0.85rem; font-weight: 600; color: #555555">2023–atual · Extensão · coordenação: Profa. Maria Teresinha de Medeiros Coelho</p>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Resíduos sólidos nas camadas do pavimento como meio de preservação e sustentabilidade do meio ambiente.</p>
+
+</article>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1.5rem">
+<h3 style="margin: 0 0 0.5rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.5rem">Projetos concluídos</h3>
+<ul style="list-style: none; margin: 0; padding: 0; border-bottom: 1px solid #E2DDD6">
+<li style="display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1.25rem; padding: 1.1rem 0; border-top: 1px solid #E2DDD6">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #A85400">2024–2025</span>
+<span style="display: flex; flex-direction: column; gap: 0.25rem"><span style="font-weight: 600; line-height: 1.4">Rede de sensores sem fio para monitoramento em rodovias: criação do campo experimental</span><span style="font-size: 0.9rem; line-height: 1.5; color: #555555">Primeira etapa da rede de sensores, com quatro projetos de iniciação científica.</span></span>
+</li>
+<li style="display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1.25rem; padding: 1.1rem 0; border-top: 1px solid #E2DDD6">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #A85400">2023–2024</span>
+<span style="display: flex; flex-direction: column; gap: 0.25rem"><span style="font-weight: 600; line-height: 1.4">Misturas asfálticas quentes no Maranhão: influência da temperatura</span><span style="font-size: 0.9rem; line-height: 1.5; color: #555555">Comportamento mecânico do CAUQ em temperaturas observadas em campo na Ilha de São Luís. Publicado no 39º Congresso da ANPET.</span></span>
+</li>
+<li style="display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1.25rem; padding: 1.1rem 0; border-top: 1px solid #E2DDD6">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #A85400">2023–2024</span>
+<span style="display: flex; flex-direction: column; gap: 0.25rem"><span style="font-weight: 600; line-height: 1.4">Solos tropicais finos pela metodologia MCT: efeito da adição de cinza do bagaço de cana-de-açúcar</span><span style="font-size: 0.9rem; line-height: 1.5; color: #555555">Publicado como capítulo do livro <i>UEMA produzindo conhecimento</i> (2025).</span></span>
+</li>
+<li style="display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1.25rem; padding: 1.1rem 0; border-top: 1px solid #E2DDD6">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #A85400">2022–2023</span>
+<span style="display: flex; flex-direction: column; gap: 0.25rem"><span style="font-weight: 600; line-height: 1.4">Curvas de compactação de solos lateríticos do norte maranhense: Proctor e Mini-Proctor</span><span style="font-size: 0.9rem; line-height: 1.5; color: #555555">Comportamento geotécnico e não saturado dos solos regionais, para aplicação do método MeDiNa no Maranhão.</span></span>
+</li>
+<li style="display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.25rem 1.25rem; padding: 1.1rem 0; border-top: 1px solid #E2DDD6">
+<span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; color: #A85400">2022–2023</span>
+<span style="display: flex; flex-direction: column; gap: 0.25rem"><span style="font-weight: 600; line-height: 1.4">Variação sucção-umidade e Mini-CBR em solos lateríticos maranhenses</span><span style="font-size: 0.9rem; line-height: 1.5; color: #555555">Relação entre a sucção do solo e a resistência à penetração no ensaio de Mini-CBR.</span></span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section style="padding: 4.5rem 0; background: #F7F4F0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-direction: column; gap: 2rem">
+<div><p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Parcerias</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Laboratórios e instituições</h2></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem">
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h24"></path><path d="M4 16h24"></path><path d="M4 22h24"></path><rect x="4" y="6" width="24" height="20" rx="3"></rect></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">LSP — Uema</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Laboratório de Mecânica dos Solos e Pavimentação, onde são feitos os ensaios de solos e misturas asfálticas.</p>
+</div>
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="22" r="3"></circle><circle cx="16" cy="8" r="3"></circle><circle cx="24" cy="22" r="3"></circle><path d="M10 20l4.5-9.5"></path><path d="M17.5 10.5L22 20"></path><path d="M11 22h10"></path></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">LAPS — Uema</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Laboratório de Aquisição e Processamento de Sinais: eletrônica e redes de sensores sem fio.</p>
+</div>
+<div style="padding: 1.5rem; border: 1px solid #E2DDD6; border-radius: 16px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.6rem">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="#A85400" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="12" width="8" height="8" rx="1.5"></rect><path d="M4 8l6 6M28 24l-6-6"></path><rect x="2" y="4" width="8" height="6" rx="1" transform="rotate(45 6 7)"></rect><rect x="22" y="22" width="8" height="6" rx="1" transform="rotate(45 26 25)"></rect><path d="M22 6a6 6 0 0 1 4 4"></path></svg>
+<h3 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.2rem; line-height: 1.2">UFRR</h3>
+<p style="margin: 0; font-size: 0.95rem; line-height: 1.6; color: #555555">Universidade Federal de Roraima, polo do projeto Erosão em foco (CNPq Pro-Amazônia).</p>
+</div>
+</div>
+</div>
+</section>
+<section id="equipe" style="padding: 4.5rem 0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-direction: column; gap: 2rem">
+<div><p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Equipe</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Quem faz o InovaGeoPav</h2></div>
+<div style="display: flex; flex-direction: column; gap: 0.75rem">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.15rem">Estudantes</h3>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); gap: 0.75rem">
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Ayrton César Teixeira e Silva</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">Iniciação científica · monitoramento computacional de dados de temperatura</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">João Victor Sousa de Lima</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">Iniciação científica (CNPq) · desempenho térmico no campo experimental</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Luiz Gustavo Barbosa de Amorim</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">Bolsista FAPEMA · gestão inteligente de pavimentos</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Alice Maria Rocha Braga Nunes</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">Iniciação científica (CNPq) · Erosão em foco</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Rodrigo Mendes Andrade</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">Iniciação científica (CNPq) · Erosão em foco</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Luan Vinícius Garcia e Garcia</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">TCC · CAUQ sob variação térmica no campo experimental</span></li>
+<li style="padding: 1rem 1.1rem; border: 1px solid #E2DDD6; border-radius: 14px; background: #FFFFFF; display: flex; flex-direction: column; gap: 0.2rem">
+<span style="font-weight: 600">Lawrence da Silva Lago Gonçalves</span><span style="font-size: 0.88rem; line-height: 1.45; color: #555555">TCC · bases de pavimentos reforçadas com geocélulas</span></li>
+</ul>
+</div>
+<div style="display: flex; flex-direction: column; gap: 0.75rem">
+<h3 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.15rem">Pesquisadores colaboradores</h3>
+<p style="margin: 0; font-size: 0.98rem; line-height: 1.7; color: #555555">Maria Teresinha de Medeiros Coelho · Walter Canales Sant'Ana · Ewaldo Eder Carvalho Santana · Marcelo Viana da Silva · Cláudio José da Silva de Sousa · Alisson Augusto Azevedo Figueiredo</p>
+</div>
+</div>
+</section>
+<section id="contato" style="padding: 4.5rem 0; background: #F7F4F0">
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 2rem">
+<div style="flex: 1 1 22rem; min-width: 0"><p style="margin: 0; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #A85400">Contato</p>
+<h2 style="margin: 0.4rem 0 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -0.02em; text-wrap: balance">Fale com o grupo</h2></div>
+<ul style="flex: 1 1 22rem; min-width: 0; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 1rem; line-height: 1.55">
+<li><span style="font-weight: 600">Endereço:</span> Universidade Estadual do Maranhão, Centro de Ciências Tecnológicas (CCT), Departamento de Engenharia Civil. Av. Lourenço Vieira da Silva, Jardim São Cristóvão, São Luís – MA, 65055-310</li>
+<li><span style="font-weight: 600">Telefone:</span> (98) 2016-8100</li>
+<li><span style="font-weight: 600">E-mail:</span> <span class="ph" style="background: #FFF1CC; color: #5C4300; padding: 0 0.3em; border-radius: 4px">[email do grupo]</span></li>
+<li><span style="font-weight: 600">Instagram:</span> <span class="ph" style="background: #FFF1CC; color: #5C4300; padding: 0 0.3em; border-radius: 4px">[@perfil do grupo]</span></li>
+</ul>
+</div>
+</section>
+</main>
+<footer style="background: #14171B; color: #B5B5B0">
+<div aria-hidden="true" style="display: flex; flex-direction: column"><div style="height: 6px; background: #2B2B2B"></div><div style="height: 6px; background: #5E3B22"></div><div style="height: 6px; background: #8A5530"></div><div style="height: 6px; background: #C69C72"></div></div>
+<div style="width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1.25rem; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 2rem; padding-bottom: 2rem; font-size: 0.9rem">
+<span style="display: flex; align-items: center; gap: 0.6rem; color: #F2F2EF; font-family: 'Space Grotesk', sans-serif; font-weight: 700"><svg width="28" height="28" viewBox="0 0 400 400" role="img" aria-label="Símbolo InovaGeoPav"><clipPath id="top-foot"><rect x="0" y="0" width="400" height="200"></rect></clipPath>
+<path d="M200.00 36.00 L214.15 36.61 L224.06 9.51 L250.66 14.80 L249.45 43.63 L262.76 48.48 L275.60 54.46 L295.13 33.22 L317.68 48.29 L305.53 74.46 L315.97 84.03 L325.54 94.47 L351.71 82.32 L366.78 104.87 L345.54 124.40 L351.52 137.24 L356.37 150.55 L385.20 149.34 L390.49 175.94 L363.39 185.85 L364.00 200.00 L363.39 214.15 L390.49 224.06 L385.20 250.66 L356.37 249.45 L351.52 262.76 L345.54 275.60 L366.78 295.13 L351.71 317.68 L325.54 305.53 L315.97 315.97 L305.53 325.54 L317.68 351.71 L295.13 366.78 L275.60 345.54 L262.76 351.52 L249.45 356.37 L250.66 385.20 L224.06 390.49 L214.15 363.39 L200.00 364.00 L185.85 363.39 L175.94 390.49 L149.34 385.20 L150.55 356.37 L137.24 351.52 L124.40 345.54 L104.87 366.78 L82.32 351.71 L94.47 325.54 L84.03 315.97 L74.46 305.53 L48.29 317.68 L33.22 295.13 L54.46 275.60 L48.48 262.76 L43.63 249.45 L14.80 250.66 L9.51 224.06 L36.61 214.15 L36.00 200.00 L36.61 185.85 L9.51 175.94 L14.80 149.34 L43.63 150.55 L48.48 137.24 L54.46 124.40 L33.22 104.87 L48.29 82.32 L74.46 94.47 L84.03 84.03 L94.47 74.46 L82.32 48.29 L104.87 33.22 L124.40 54.46 L137.24 48.48 L150.55 43.63 L149.34 14.80 L175.94 9.51 L185.85 36.61 Z" fill="#F28C1B" clip-path="url(#top-foot)"></path>
+<circle cx="200" cy="200" r="140" fill="#14171B"></circle>
+<clipPath id="bot-foot"><path d="M8 200 A192 192 0 0 0 392 200 Z"></path></clipPath>
+<g clip-path="url(#bot-foot)">
+<rect x="0" y="200" width="400" height="45" fill="#2B2B2B"></rect>
+<rect x="0" y="244" width="400" height="41" fill="#5E3B22"></rect>
+<rect x="0" y="284" width="400" height="41" fill="#8A5530"></rect>
+<rect x="0" y="324" width="400" height="71" fill="#C69C72"></rect>
+<rect x="0" y="242" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="282" width="400" height="4" fill="#14171B"></rect>
+<rect x="0" y="322" width="400" height="4" fill="#14171B"></rect>
+<line x1="22" y1="222" x2="378" y2="222" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="22 16"></line>
+</g>
+<line x1="200" y1="200" x2="116" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="200" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="116" y1="148" x2="200" y2="92" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<line x1="200" y1="92" x2="284" y2="148" stroke="#4A4A4A" stroke-width="8" stroke-linecap="round"></line>
+<circle cx="116.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="92.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="284.00" cy="148.00" r="17" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle>
+<circle cx="200.00" cy="200.00" r="15" fill="#F28C1B" stroke="#14171B" stroke-width="6"></circle></svg>InovaGeoPav</span>
+<span>Grupo de pesquisa · Universidade Estadual do Maranhão</span>
+</div>
+</footer>
+</div>
+</body>
+</html>
